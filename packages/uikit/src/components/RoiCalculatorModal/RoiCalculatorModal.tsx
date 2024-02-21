@@ -196,6 +196,7 @@ const RoiCalculatorModal: React.FC<React.PropsWithChildren<RoiCalculatorModalPro
             dispatch={dispatch}
             earningTokenPrice={earningTokenPrice}
             performanceFee={performanceFee}
+            lpRewardsApr={lpRewardsApr}
             stakingTokenPrice={stakingTokenPrice}
           />
         )}
