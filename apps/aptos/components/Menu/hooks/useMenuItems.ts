@@ -1,15 +1,6 @@
-import { useMemo } from 'react'
-import {
-  DropdownMenuItems,
-  DropdownMenuItemType,
-  EarnFillIcon,
-  EarnIcon,
-  MenuItemsType,
-  MoreIcon,
-  SwapFillIcon,
-  SwapIcon,
-} from '@pancakeswap/uikit'
 import { ContextApi, useTranslation } from '@pancakeswap/localization'
+import { DropdownMenuItems, EarnFillIcon, EarnIcon, MenuItemsType, SwapFillIcon, SwapIcon } from '@pancakeswap/uikit'
+import { useMemo } from 'react'
 import { useMenuItemsStatus } from './useMenuItemsStatus'
 
 export type ConfigMenuDropDownItemsType = DropdownMenuItems & { hideSubNav?: boolean }
@@ -34,11 +25,6 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
         label: t('Liquidity'),
         href: '/liquidity',
       },
-      {
-        label: t('Bridge'),
-        href: 'https://bridge.pancakeswap.finance/aptos',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
     ],
   },
   {
@@ -55,23 +41,6 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       {
         label: t('Pools'),
         href: '/pools',
-      },
-    ],
-  },
-  {
-    label: '',
-    href: '/ifo',
-    icon: MoreIcon,
-    hideSubNav: true,
-    items: [
-      {
-        label: t('IFO'),
-        href: '/ifo',
-      },
-      {
-        label: t('Blog'),
-        href: 'https://blog.pancakeswap.finance',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
       },
     ],
   },

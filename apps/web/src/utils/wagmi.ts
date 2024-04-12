@@ -57,7 +57,7 @@ export const metaMaskConnector = new MetaMaskConnector({
 const bloctoConnector = new BloctoConnector({
   chains,
   options: {
-    defaultChainId: 56,
+    defaultChainId: 11155111,
     appId: 'e2f2f0cd-3ceb-4dec-b293-bb555f2ed5af',
   },
 })
@@ -91,7 +91,7 @@ const BinanceW3WConnector = getWagmiConnector()
 export const binanceWeb3WalletConnector = new BinanceW3WConnector({
   chains,
   options: {
-    chainId: ChainId.BSC,
+    chainId: ChainId.BASE,
   },
 })
 

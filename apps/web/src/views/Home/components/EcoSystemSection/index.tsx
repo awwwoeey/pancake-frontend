@@ -184,14 +184,7 @@ const useTradeBlockData = () => {
         defaultImage: `${ASSET_CDN}/web/landing/trade-liquidity-purple.png`,
         path: '/liquidity',
       },
-      {
-        title: t('Bridge'),
-        description: t('Seamlessly transfer assets across chains'),
-        ctaTitle: t('Bridge Now'),
-        image: `${ASSET_CDN}/web/landing/trade-bridge.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/trade-bridge-purple.png`,
-        path: 'https://bridge.pancakeswap.finance/',
-      },
+
       {
         title: t('Perpetual'),
         description: t('Trade endlessly without expiration dates'),

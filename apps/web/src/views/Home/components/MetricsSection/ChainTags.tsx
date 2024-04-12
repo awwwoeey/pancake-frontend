@@ -78,16 +78,6 @@ const StyledChainIcon = styled.div`
 
 const newsItems = [
   {
-    key: 'BNB Chain',
-    component: (
-      <StyledChainIcon style={{ width: 26 }}>
-        <BinanceChainIcon />
-      </StyledChainIcon>
-    ),
-    background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), #F0B90B',
-    iconWidth: '26px',
-  },
-  {
     key: 'opBNB Chain',
     component: <BinanceChainIcon color="F0B90B" />,
     background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), #333',
